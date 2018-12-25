@@ -1,0 +1,502 @@
+html {
+  font-size: 16px; /* = 1rem */
+}
+
+/* Desktop >1600px: the range of 1600px and more */
+
+body {
+  font-family:'Libre Franklin', sans-serif;
+  min-width: 1600px;
+  color: navy;
+}
+
+.offset-container {
+  position: relative;
+  top: 65px;
+}
+
+h2 {
+  font-family: "Helvertica", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2, p {
+  opacity: 0.7;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px; /* spec */
+  }
+
+
+.container {  /* general class */
+  width: 100%; /* spec */
+  display: flex;
+  flex-direction: row;
+}
+
+.left-col { /* general class */
+  width: 60%;
+  padding: 32px 24px; /* specs */
+  }
+
+.left-col img { /* general class */
+  width: 100%;
+  height: auto;
+}
+
+ .info .left-col, .exhibit .left-col {
+   background-color: #FBF0FF;/*#F5D4FF; rows */
+ }
+
+.right-col { /* general class */
+  width: 40%;
+  display: flex;
+  align-items: center; /* for row(s) */
+}
+
+.banner .right-col, .learning {
+   background-color: #FBF0FF;
+}
+
+ .info .right-col, .exhibit .right-col {
+  align-self: baseline;
+  padding-top: 16px;
+}
+
+.row { /* general class */
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.row img {  /* general class */
+  width: 35%;
+  height: auto;
+  padding: 16px; /* spec */
+}
+
+.row .text { /* general class */
+  font-size: 1.1rem;
+  width: 65%; /* spec */
+}
+
+.row p { /* general class */
+  line-height: 1.2;
+  padding: 8px 0;
+}
+
+.text a { /*  general class*/
+  text-decoration: none;
+  font-weight: bold;
+  color: #FC7619;
+}
+
+/*  Top section */
+
+.top {
+  margin-top: 10px;
+  color: navy;
+  width: 100%;
+  height: 64px;
+  display: inline-flex;
+  align-items: center; /* vertically */
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  border-top: 1px dashed darkblue;
+  border-bottom: 1px dashed darkblue;
+
+}
+
+.academy {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  flex-grow: 1;
+  margin-left: 24px;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+strong {
+  font-weight: bold;
+}
+
+nav {
+  margin-right: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: navy;
+  opacity: 0.7;
+  padding-left: 16px; /* for each anchor */
+}
+
+/* Banner  section */
+
+.banner .right-col {
+   justify-content: center; /* for banner */
+  }
+
+.banner h1, .banner p, .button {
+  margin-bottom: 20px; /*  maybe lign-height instead in rem? */
+}
+
+.banner h1 { /* only one heading: h1 */
+  font-size: 3rem;
+}
+
+.banner p {
+  font-size: 1.8rem;
+}
+
+.button {
+  text-align: center;
+  padding: 20px;
+  background-color: navy;
+  opacity: 0.7;
+}
+
+.button a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+}
+
+/* Info section */
+
+/* Left column */
+
+.row .text {
+  opacity: 0.9;
+}
+
+.info h2 {
+  font-weight: 100;
+  text-align: left;
+  padding: 32px 0 24px 0;
+}
+
+.quote {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.author {
+  font-weight: bolder;
+  padding-top: 32px;
+}
+
+/* Info right column */
+
+
+/* Learning section */
+
+.learning {
+  width: 100%;
+}
+
+.large-col {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.rows {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 72px;
+  padding: 8px 0;
+}
+
+.courses {
+  background-color: white;
+  width: 40%;
+  border: 1px dashed navy;
+  margin: 0 8px;
+}
+
+.courses img {
+  width: 100%;
+  height: auto;
+}
+
+.category {
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.learning h2 {
+  padding: 32px 0;
+  color: navy;
+  opacity: 0.7;
+}
+
+.category h4 {
+  text-transform: uppercase;
+  padding: 8px 0;
+}
+
+.category p {
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+/* Exhibit section */
+
+.exhibit h2 {
+  padding: 32px 0;
+}
+
+.text h2 {
+  font-weight: 300;
+  text-align: left;
+}
+
+.exhibit .left-col p {
+  padding-bottom: 32px;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* Footer section */
+
+footer {
+  width: 100%;
+  font-size: 14px;
+  font-stretch: semi-condensed;
+  opacity: 0.9;
+  width: 100%;
+  position: relative;
+  float:right;
+  align-items: center;
+}
+
+.copyright {
+ margin-left: 24px;
+}
+
+.rights {
+  display: inline-flex;
+}
+
+.rights h5 {
+  padding-right: 16px; /* for each h5 */
+}
+
+.social {
+  color: #FC7619;
+  font-size: 1.8rem;
+  word-spacing: 2.5rem;
+  padding: 1rem;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  top: -16px;
+  margin-top: 16px;
+}
+
+/* Desktop: >1600px */
+
+@media only screen and (min-width: 500px) and (max-width: 2000px), (orientation: landscape) {
+  .nav-mobile, .mob-banner, .mob-info, .mob-learning, .mob-exhibit, .mob-footer {
+    display: none;
+  }
+
+}
+
+/*  Mobile: <= 480px */
+
+@media only screen and (min-width:200px) and (max-width:480px), (orientation: portrait) {
+  .top, .info .left-col, .info .right-col, .learning, .exhibit, .container, footer  {
+     display: none;
+   }
+
+  body {
+    font-family: "Nunito Sans", serif;
+  }
+
+  .offset-container {
+     position: relative;
+     top: 0;
+   }
+
+ .nav-mobile {
+   max-width: 480px;
+   height: 64px;
+   display: flex;
+ }
+
+ .nav-mobile img  {
+   padding: 0 36px;
+
+}
+
+.mob-banner, .mob-learning, .mob-exhibit, .mob-footer {
+   max-width: 480px;
+ }
+
+ .mob-headline { /* headline */
+   padding-top: 32px;
+   padding-bottom: 16px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 2rem;
+   color: #160336;
+   opacity: 0.9;
+ }
+
+ /* Banner section */
+
+ .mob-banner img {
+   max-width: 480px;
+ }
+
+ .mob-banner {
+   background-color: rgb(100, 10, 176);
+   padding-bottom: 32px;
+ }
+
+ .mob-container {
+   padding: 0 16px;
+ }
+
+.mob-banner .mob-headline {
+  color: white;
+  text-align: left;
+  padding: 32px 0;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  line-height: 1.2;
+ }
+
+.mob-banner .mob-paragraph {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.4;
+  padding-bottom: 24px;
+}
+
+.mob-text {
+   color: #490AB0;
+   text-align: left;
+ }
+
+ .mob-text p {
+   font-weight: 100;
+   font-size: 1.2rem;
+   letter-spacing: 0.04rem;
+ }
+
+ .mob-button {
+   width: 100%;
+   text-align: center;
+   background-color: white;
+   opacity: 0.8;
+   padding: 24px 0;
+}
+
+ .mob-button a {
+   font-size: 1.5rem;
+   word-spacing: 0.06rem;
+   color: #160336;
+   text-decoration: none;
+ }
+
+/* Info  section */
+
+ .mob-info {
+  max-width: 480px;
+}
+
+.mob-info  h3 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.mob-info .mob-text {
+  color: white;
+  background-color: rgb(100, 58, 176);
+  padding: 32px 16px;
+  margin: 0 -16px;
+  border-left: 2.5rem solid #160336;
+}
+
+.mob-row {
+  line-height: 1.6;
+  padding: 0 16px;
+  padding-top: 32px;
+}
+
+.mob-row img {
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.mob-row a {
+  letter-spacing: 0.06rem;
+  text-decoration: none;
+  color: orange;
+}
+
+/* Learning section  */
+
+.mob-courses {
+  padding: 0 16px;
+}
+
+.mob-course {
+  background-color: rgba(73, 20, 176, 0.68);
+  margin-bottom: 8px;
+}
+
+.mob-course .mob-heading {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  border-left: 1.5rem solid #FC7619;
+  text-align: left;
+  padding: 16px 0 24px 16px;
+}
+
+/* Exhibit section */
+
+.mob-exhibit {
+  margin-bottom: 24px;
+}
+
+.mob-footer {
+  background-color: rgb(73, 10, 176);
+  color: white;
+}
+
+.mob-copyright {
+  font-size: 0.8rem;
+  padding: 16px 0;
+  padding-left: 1rem;
+  letter-spacing: 0.06rem;
+}
+
+}
